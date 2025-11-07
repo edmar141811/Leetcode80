@@ -1,4 +1,13 @@
-//will update with corrections soon
+/*
+Runtime 4 ms
+Beats 84.69%
+
+Memory 13.57 MB
+Beats 100.00%
+
+In both efficiency and speed, they are very well done will probably attempt in java soon
+
+*/
 class Solution {
 public:
     int removeDuplicates(vector<int>& nums) {
