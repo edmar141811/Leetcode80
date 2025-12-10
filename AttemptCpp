@@ -11,13 +11,15 @@ In both efficiency and speed, they are very well done will probably attempt in j
 class Solution {
 public:
     int removeDuplicates(vector<int>& nums) {
+        //initialize and declare variables
         int fullList= nums.size();
         int tracker1=0;
         int tracker2=1;
         int deletiens=0;
         bool dupe=0;
+        //every loop skips when there is a delete and counts up with the tracker further up
         while(deletiens+tracker2 < fullList){
-            //cout << dupe << " " << tracker1
+            //if two numbers equal each other, and it isn't the first time, jump forward else delete
             if(nums[tracker1]==nums[tracker2]){
                 if(dupe==0){
                     dupe=1;
